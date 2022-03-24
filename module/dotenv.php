@@ -1,11 +1,8 @@
 <?php
-
-namespace Envloader;
-
 class DotEnv
 {
 
-    protected $path = "/.env";
+    protected $path;
 
 
     public function __construct(string $path)
