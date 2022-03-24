@@ -1,4 +1,6 @@
 <?php
+use Envloader\DotEnv;
+
 function redirect($URL)
 {
     header('Location: ' . $URL);
@@ -19,3 +21,4 @@ function logout(){
     session_destroy();
     redirect('/login.php');
 }
+
